@@ -9,6 +9,7 @@ BOT_TOKEN = "8915721290:AAGJUas-Cogmz67Z9LBNuH8JsDnKxsP6gRg"
 
 CHANNELS = {
     "Channel 1": "@haparotv",
+    "Channel 2": "@jaghnewstv",
 }
 
 VIDEO_MAP = {
