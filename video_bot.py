@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 BOT_TOKEN = "8915721290:AAGJUas-Cogmz67Z9LBNuH8JsDnKxsP6gRg"
 
 CHANNELS = {
-    "Channel 1": "@haparot",
+    "Channel 1": "@haparotv",
 }
 
 VIDEO_MAP = {
