@@ -8,13 +8,11 @@ logging.basicConfig(level=logging.INFO)
 BOT_TOKEN = "8915721290:AAGJUas-Cogmz67Z9LBNuH8JsDnKxsP6gRg"
 
 CHANNELS = {
-    "Channel 1": "@yourchannel1",
-    "Channel 2": "@yourchannel2",
+    "Channel 1": "@haparot",
 }
 
 VIDEO_MAP = {
-    "video1": "FILE_ID_FOR_VIDEO_1",
-    "video2": "FILE_ID_FOR_VIDEO_2",
+    "video1": "BAACAgEAAxkBAAMIaimp1jNBuEpLyvIVrRignc6kZL4AAk4KAAKnwUhFDVTX_HJ2DVE7BA",
 }
 
 async def get_file_id(update: Update, context: ContextTypes.DEFAULT_TYPE):
