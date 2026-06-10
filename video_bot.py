@@ -87,12 +87,15 @@ async def send_video(message, context, payload):
     await asyncio.sleep(30)
     await context.bot.delete_message(chat_id=msg.chat_id, message_id=msg.message_id)
 
+async def get_file_id(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    file_id = update.message.video.file_id
+    await update.message.reply_text(f"Your file_id:\n`{file_id}`", parse_mode="Markdown")
+
 def main():
     app = ApplicationBuilder().token(BOT_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(button_check))
+    from telegram.ext import MessageHandler, filters
+    app.add_handler(MessageHandler(filters.VIDEO, get_file_id))
     print("Bot is running...")
     app.run_polling()
-
-if __name__ == "__main__":
-    main()
