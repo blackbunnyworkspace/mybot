@@ -12,7 +12,8 @@ CHANNELS = {
 }
 
 VIDEO_MAP = {
-    "video1": "BAACAgEAAxkBAAMIaimp1jNBuEpLyvIVrRignc6kZL4AAk4KAAKnwUhFDVTX_HJ2DVE7BA",
+    "video1": "BAACAgUAAxkBAAMZaim1C2xNluUAAa5R5AYX4uDihhNoAAKOIQACLt1IVUj8QxMziUGgOwQ",
+
 }
 
 async def get_file_id(update: Update, context: ContextTypes.DEFAULT_TYPE):
